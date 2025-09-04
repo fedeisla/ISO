@@ -85,3 +85,20 @@
   </div>
 </details>
 
+ <details>
+<summary>Procesos</summary>
+  
+  - *top*: Muestra una vista dinamica y en tiempo real el rendimiento del sistema, incluyenod los procesos de ejecucion, la utilizacion de CPU y memmoria y el estado de usuarios activos
+  - *htop*: lo mismo que el top pero mas lindo 
+  - *ps*: muestra los procesos que estan ocurriendo en el momento
+  - *pstree*: muestra el arbol de procesos
+  - *kill*: Se usa para mandar señales a proceso, en este caso terminar con un proceso en ejecucion por su nombre o ID
+  - *pgrep*: 
+  - *pkill*: 
+  - *killall*: 
+  - *renice*: 
+  - *xkill*: 
+  - *atop*: 
+  - *nice*: 
+ </details>
+
