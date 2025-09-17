@@ -440,3 +440,34 @@ Cuenta líneas, palabras y caracteres en archivos.
   
  </details>
 
+<h3>Ejercicio 19 de la practica 1</h3>
+<p>Indique qué acción realiza cada uno de los comandos indicados a continuación 
+considerando su orden. Suponga que se ejecutan desde un usuario que no es root ni 
+pertenece al grupo de root. (Asuma que se encuentra posicionado en el directorio de 
+trabajo del usuario con el que se logueó). En caso de no poder ejecutarse el comando, 
+indique la razón:  </p>
+
+```bash
+l s −l > prueba   --> se muestra la lista de cosas detalladas que hay donde este parado 
+ps > PRUEBA       --> muestra los proceso de la bash y que comando fue ejecutado
+chmod 710 prueba  --> error de acceso denegado
+chown root:root PRUEBA   --> error de acceso denegado
+chmod 777 PRUEBA   --> error de acceso denegado
+chmod 700 /etc/passwd   --> error de acceso denegado
+passwd root   --> no deberias poder cambiar la contraseña del root
+rm PRUEBA  --> borra el archivo de prueba
+man /etc/shadow  -->no funciona por que man se usa para ver la ayuda de un comando en especial
+find / −name ∗ .conf  find --> la intencion de este comando es buscar en todo el sistema los archivos .conf, la sintaxis esta mal deberia ser find / -name "*.conf", te muestra los archivos . conf que podes ver pero si no sos root, te dice acceso denegado
+usermod root −d /home/ newroot −L  
+cd / rootcd   
+rm ∗  
+cd / etc  
+cp ∗ /home −R  
+shutdown  
+
+
+
+```
+
+ 
+
